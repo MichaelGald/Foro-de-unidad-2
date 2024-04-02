@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Configuración</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Menu de Aplicación de Configuración</h1>
+        <ul>
+            <li><a href="#" onclick="mostrarContenido('texto')">Texto</a></li>
+            <li><a href="#" onclick="mostrarContenido('configuracion')">Configuración del texto</a></li>
+        </ul>
+        <div id="texto" class="contenido oculto">
+            <p id="textoContenido"></p>
+        </div>
+        <div id="configuracion" class="contenido oculto">
+            <p>
+                <label for="language">Idioma:</label>
+                <select id="language">
+                  <option value="en">Inglés</option>
+                  <option value="es">Español</option>
+                </select>
+                <label for="theme">Tema:</label>
+                <select id="theme">
+                  <option value="light">Claro</option>
+                  <option value="dark">Oscuro</option>
+                </select>
+                  <label for="font">Tipo de letra:</label>
+                <select id="font">
+                  <option value="Arial, sans-serif">Arial</option>
+                  <option value="Times New Roman, serif">Times New Roman</option>
+                  <option value="Courier New, monospace">Courier New</option>
+                </select>
+                <button id="saveBtn">Guardar</button>
+            </p>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/texto.js"></script>
+    <script src="js/config.js"></script>
+</body>
+</html>
